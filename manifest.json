@@ -1,0 +1,21 @@
+{
+  "name": "Custom Header Injector",
+  "description": "Adds user-defined headers to all requests",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Set Custom Headers"
+  }
+}
